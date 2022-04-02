@@ -17,8 +17,6 @@ export const Home = () => {
     const [page, setPage] = useState(0);
     const [Pagination, setPagination] = useState([]);
   
-    const API_URL = `https://hn.algolia.com/api/v1/search_by_date?tags=story&page=${page}`;
-  
     useEffect(() => {
       window.page = 0;
       call_interval();
